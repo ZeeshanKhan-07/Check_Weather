@@ -1,5 +1,3 @@
-import APIKey from "./apiKey.js" ;
-
 const container = document.querySelector(".container"); 
 const search = document.querySelector(".search-box button"); 
 const weatherBox = document.querySelector(".weather-box"); 
@@ -7,7 +5,7 @@ const weatherDetails = document.querySelector(".weather-details");
 const error404 = document.querySelector(".not-found");
 
 search.addEventListener("click" , () => {
-    //const APIKey = '7fafd248ef024a95a5606776bbf21de9';
+    const APIKey = '7fafd248ef024a95a5606776bbf21de9';
     const city = document.querySelector('.search-box input').value;
 
     if(city == ""){
